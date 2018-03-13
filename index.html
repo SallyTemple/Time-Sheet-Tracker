@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head s>
@@ -9,16 +9,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<<<<<<< HEAD:timesheet.html
         <scrip 
+=======
+        <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+        <script src="./main.js"></script>
+>>>>>>> 830efe15732decd09e134f9f0c68f81ae97f5488:index.html
     </head>
 
     <body style="width:90vw; margin-left:5vw">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
-                or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <h1 class="display-4">Time Sheet Tracker</h1>
+            
         </div>
         <table class="displayPeople">
             <tr>
@@ -37,19 +39,19 @@
         <form>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Example input">
+              <input type="text" class="form-control" id="name" placeholder="">
             </div>
             <div class="form-group">
               <label for="role">Role</label>
-              <input type="text" class="form-control" id="role" placeholder="Another input">
+              <input type="text" class="form-control" id="role" placeholder="">
             </div>
             <div class="form-group">
               <label for="date">Start date</label>
-              <input type="text" class="form-control" id="date" placeholder="Another input">
+              <input type="text" class="form-control" id="date" placeholder="DD/MM/YY">
             </div>
             <div class="form-group">
-              <label for="rate">Monthly pay</label>
-              <input type="text" class="form-control" id="rate" placeholder="Another input">
+              <label for="rate">Monthly salary</label>
+              <input type="text" class="form-control" id="rate" placeholder="">
             </div>
             <button type="button" id="add-info" class="btn btn-primary">Submit</button>
 
