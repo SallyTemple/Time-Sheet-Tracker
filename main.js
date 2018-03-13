@@ -9,6 +9,7 @@
  firebase.initializeApp(config);
 
  var database = firebase.database();
+ var employee = database.child('employees');
 
 var name= "";
 var date= "";
@@ -26,15 +27,16 @@ $("#add-info").on("click", function (event) {
     role = $("#role").val().trim();
     rate = $("#rate").val().trim();
 
-    database = usersRef.push({
+    var newEmployee = {
 
         name : name,
         date : date,
         role : role,
         rate : rate
 
-    })
- 
+    }
+
+    database.ref().push(newEmployee);
 
 
 
