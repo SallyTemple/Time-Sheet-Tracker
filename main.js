@@ -9,12 +9,12 @@
  firebase.initializeApp(config);
 
  var database = firebase.database();
- var employee = database.child('employees');
+ //var employee = database.child('employees');
 
 var name= "";
 var date= "";
 var role= "";
-var rate= "";
+var rate= 0;
 
 
 // get info from form
